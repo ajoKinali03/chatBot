@@ -90,7 +90,7 @@ function statusUser(){
 
 //function respon kata kata dai user lain(bot)
 const wordRepon = (i) => {
-  const arrWord = ['apo?', 'sbdjhsdjfbh?', 'ooohhhhh', 'adhfkghsffefwfd', 'ashdajdfsdhf!!!', 'pqowp...'];
+  const arrWord = ['apo?', 'sbdjhsdjfbh?', 'ooohhhhh', 'adhfkghsffefwfd', 'ashdajdfsdhf!!!', 'pqowp...', 'poasi?'];
   if(i < arrWord.length){
     return arrWord[i];
   };
@@ -98,8 +98,6 @@ const wordRepon = (i) => {
     return 'lah teh list kato kato abih!';
   };
 };
-
-
 
 
 //responsif height
