@@ -90,7 +90,7 @@ function statusUser(){
 
 //function respon kata kata dai user lain(bot)
 const wordRepon = (i) => {
-  const arrWord = ['apo?', 'sbdjhsdjfbh?', 'ooohhhhh', 'adhfkghsffefwfd', 'ashdajdfsdhf!!!', 'pqowp...', 'poasi?'];
+  const arrWord = ['apo?', 'sbdjhsdjfbh?', 'ooohhhhh', 'adhfkghsffefwfd', 'ashdajdfsdhf!!!', 'pqowp...', 'poasi?', 'ok'];
   if(i < arrWord.length){
     return arrWord[i];
   };
