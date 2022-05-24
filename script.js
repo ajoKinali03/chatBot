@@ -100,8 +100,6 @@ const wordRepon = (i) => {
 };
 
 
-
-
 //responsif height
 
 const footer = document.getElementsByClassName('footer')[0];
