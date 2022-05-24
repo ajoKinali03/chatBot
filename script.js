@@ -59,7 +59,7 @@ function formReset(){
   form.reset();
 };
 
-
+//respon user lain(bot)
 function respon(chatRoom, i){
   setTimeout(function(){
     const wordResponValue = wordRepon(i);
@@ -80,31 +80,27 @@ function respon(chatRoom, i){
 function statusUser(){
   const stts = document.getElementsByClassName('status')[0];
   setTimeout(function(){
-    stts.innerHTML = 'tunggu sabanta...';
-  }, 500);
+    stts.innerHTML = 'sdg mengetik';
+  }, 700);
   setTimeout(function(){
     stts.innerHTML = 'online';
-  }, 2500);
+  }, 2700);
 };
 
 
 //function respon kata kata dai user lain(bot)
 const wordRepon = (i) => {
-  const arrWord = ['apo?', 'apo kecek ang o?', 'hasdjfhkjsdf', 'adhfkghsffefwfd', 'ashdajdfsdhf'];
+  const arrWord = ['apo?', 'sbdjhsdjfbh?', 'ooohhhhh', 'adhfkghsffefwfd', 'ashdajdfsdhf!!!', 'pqowp...'];
   if(i < arrWord.length){
     return arrWord[i];
   };
   if(i >= arrWord.length){
-    return 'maaf kosakata habis';
+    return 'lah teh list kato kato abih!';
   };
 };
 
 
 
-
-
-
-/*
 
 //responsif height
 
@@ -124,18 +120,14 @@ if (wndwHeight > 400) {
 };
 
 
-txt.addEventListener('input', function(){
-  mic.classList.add('mic');
-  send.classList.remove('send');
-});
-
-
 txt.addEventListener('click', function() {
   const test = setInterval(function() {
     const wndwHeight = window.innerHeight;
     if (wndwHeight <= 400) {
       footer.style.top = '87%';
       header.style.bottom = '87%';
+      mic.classList.add('mic');
+      send.classList.remove('send');
     };
   },10);
   
@@ -143,7 +135,6 @@ txt.addEventListener('click', function() {
   
   setTimeout(function(){
     clearInterval(test);
-    console.log('ok2');
   }, 1000);
 });
 
@@ -164,8 +155,3 @@ body.addEventListener('touchend', function() {
     console.log('start2');
   }, 2000);
 });
-
-
-*/
-
-
