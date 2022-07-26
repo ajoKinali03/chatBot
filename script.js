@@ -53,7 +53,7 @@ function newElementUserChat(chatRoom, textInpt){
 };
 
 
-//-----mereset prilaku default dai form input----//
+//-----mereset prilaku default dari form input----//
 function formReset(){
   const form = document.getElementsByClassName('blokText')[0];
   form.reset();
@@ -98,58 +98,3 @@ const wordRepon = (i) => {
     return 'lah teh list kato kato abih!';
   };
 };
-
-
-//responsif height
-
-const footer = document.getElementsByClassName('footer')[0];
-const header = document.getElementsByClassName('header')[0];
-const txt = document.getElementsByTagName('input')[0];
-const body = document.getElementsByTagName('html')[0];
-const mic = document.getElementsByClassName('mic')[0];
-const send = document.getElementsByClassName('send')[0];
-
-
-const wndwHeight = window.innerHeight;
-if (wndwHeight > 400) {
-  footer.style.top = '92%';
-  header.style.bottom = '92%';
-  mic.classList.remove('mic');
-};
-
-
-txt.addEventListener('click', function() {
-  const test = setInterval(function() {
-    const wndwHeight = window.innerHeight;
-    if (wndwHeight <= 400) {
-      footer.style.top = '87%';
-      header.style.bottom = '87%';
-      mic.classList.add('mic');
-      send.classList.remove('send');
-    };
-  },10);
-  
-  
-  
-  setTimeout(function(){
-    clearInterval(test);
-  }, 1000);
-});
-
-body.addEventListener('touchend', function() {
-  const test = setInterval(function() {
-    const wndwHeight = window.innerHeight;
-    if (wndwHeight > 400) {
-      footer.style.top = '92%';
-      header.style.bottom = '92%';
-      mic.classList.remove('mic');
-      send.classList.add('send');
-    };
-  }, 50);
-  
-  
-  setTimeout(function() {
-    clearInterval(test);
-    console.log('start2');
-  }, 2000);
-});

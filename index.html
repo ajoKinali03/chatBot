@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>chat_Bot</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>chat_Bot</title>
 </head>
 <body>
 
-    <div class="container cf">
-        <div class="header">
-            <div class="backBtn">
-                <img src="img/back.png">
-            </div>
-            <div class="profile">
-              <img src="img/troll-face-meme.gif">
-            </div>
-            <div class="namaStatus">
-              <p class="nama">unknown char</p>
-              <p class="status">online</p>
-            </div>
-            <div class="menu">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+  <div class="container cf">
+    <div class="side-bar">
+      <div class="nav-bar">
+        <div class="acount"></div>
+        <div class="container-status">
+          <div class="snap"></div>
+          <div class="new-mesage"></div>
+          <div class="menu"></div>
         </div>
-        <div class="chatRoom cf">
-        </div>
-        <div class="footer">
-            <div class="visualConten">
-                <div class="emoteIcon">
-                  <img src="img/smile.png">
-                </div>
-                <form class="blokText"
-                onsubmit="return false">
-                    <input type="text" id="textInpt" placeholder="Ketik Pesan">
-                </form>
-                <div class="cameraIcon">
-                  <img src="img/camera.png">
-                </div>
-                <div class="papperClipIcon">
-                  <img src="img/attach-paperclip-diagonal-symbol.png">
-                </div>
-            </div>
-            <div class="audioConten">
-                <div class="icon">
-                  <img src="img/mic.png" class="mic">
-                  <img src="img/send.png"   class="send">
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="search-bar">
+        <div class="icon-search"></div>
+        <!-- input text -->
+      </div>
+      <div class="kontak"></div>
     </div>
+
+    <div class="chat-container">
+      <div class="header">
+        <div class="reciver-profile">
+          <div class="profile"></div>
+          <div class="stt-name">
+            <p class="nama">unknown char</p>
+            <p class="status">online</p>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="chatRoom cf">
+      </div>
+      <div class="footer">
+        <div class="visualConten">
+          <div class="left-bag">
+            <div class="emoteIcon">
+              <img src="img/smile.png">
+            </div>
+            <form class="blokText"
+            onsubmit="return false">
+              <input type="text" id="textInpt" placeholder="Ketik Pesan">
+            </form>
+          </div>
+          <div class="right-bag">
+            <div class="cameraIcon">
+              <img src="img/camera.png">
+            </div>
+            <div class="papperClipIcon">
+              <img src="img/attach-paperclip-diagonal-symbol.png">
+            </div>
+          </div>
+        </div>
+        <div class="audioConten">
+          <div class="mic"></div>
+          <img class="send"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="script.js"></script>
 </body>
